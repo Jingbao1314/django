@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+
+<head>
+    <title>共享简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <!-- default-css-files -->
+    <link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="../static/css/flexslider.css" type="text/css" media="screen" />
+    <link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <!-- default-css-files -->
+    <!-- Online fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <!-- //Online fonts -->
+    <!-- style.css-file -->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' />
+
+</head>
+<!-- Head -->
+
+<body>
+<!--header-section-starts-here-->
+<header>
+    <div class="top-header" id="home">
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-4 top-right">
+                <a href="http://127.0.0.1:8080/login" data-toggle="modal"
+                   data-target="#myModal1"><span></span>登录</a>
+                <a href="#" data-toggle="modal" data-target="#myModal2"><span></span>注销</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</header>
+
+<section class="banner jarallax">
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-right navigation-right" id="bs-example-navbar-collapse-1">
+                    <nav class="link-effect-3 w3ls-navma" id="link-effect-3">
+                        <ul class="nav1 navbar-nav nav nav-wil">
+                            <li><a placeholder="通讯录" href="http://127.0.0.1:8080/colorfulsociety/activity" class="scroll">通讯录</a></li>
+                            <li><a placeholder="共享简历" href="http://127.0.0.1:8080/colorfulsociety/activity" class="scroll">共享简历</a></li>
+                            <li><a placeholder="个人中心" href="http://127.0.0.1:8080/colorfulsociety/officer" class="scroll">个人中心</a></li>
+                            <li><a placeholder="下载中心" href="http://127.0.0.1:8080/colorfulsociety/download" class="scroll">下载中心</a></li>
+                            <li><a placeholder="通知公告" href="http://127.0.0.1:8080/colorfulsociety/notice" class="scroll">通知公告</a></li>
+                            <li><a placeholder="联系我们" href="http://127.0.0.1:8080/colorfulsociety/contactus" class="scroll">联系我们</a></li>
+                            <li><a placeholder="友情链接" href="http://127.0.0.1:8080/colorfulsociety/links" class="scroll">友情链接</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<section class="team" id="staff">
+    <div class="container">
+        <h3>简历展示</h3>
+        <div class="agile-team-grids">
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a id="1" href="http://127.0.0.1:8080/preview"
+                       target="_self">
+                        <img src="../static/images/preview.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                    {% if first_name and first_company%}
+
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=1" target="_self">
+                        <img src="../static/images/preview1.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                    {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=2"
+                       target="_self">
+                        <img src="../static/images/preview2.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                   {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=3"
+                       target="_self">
+                        <img src="../static/images/preview3.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                   {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=4" target="_self">
+                        <img src="../static/images/preview4.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                    {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=5" target="_self">
+                        <img src="../static/images/preview5.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                    {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=6" target="_self">
+                        <img src="../static/images/preview6.jpg" alt="image"
+                             class="img-responsive"/>
+                    </a>
+                    {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 agile-w3ls">
+                <div class="team-grid text-center">
+                    <a href="http://127.0.0.1:8080/preview?id=7" target="_self">
+                        <img src="../static/images/preview7.jpg" alt="image"
+                             class="img-responsive" />
+                    </a>
+
+                   {% if first_name and first_company%}
+                        <h4><p >{{first_name}}</p></h4>
+                        <h5><p >{{first_company}}</p></h5>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+
+</html>

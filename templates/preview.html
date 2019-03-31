@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link th:href="@{/css/preview.css}" rel='stylesheet' type='text/css'/>
+    <meta charset="utf-8">
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<img th:src="'images/' + ${preview} + '.jpg'"
+     alt="Paris" style="width:40%;height:80%;">
+<div class="xx">
+    <div class="download">
+        <a href="http://127.0.0.1:8080/index">
+            <button type="button">返回</button>
+            <div class="return">
+                <a th:href="'http://127.0.0.1:8080/download?fileName=' + ${fileName}"
+                   th:download="${fileName}+'.docx'" target="_self">
+                    <button>下载
+                    </button>
+                </a>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
